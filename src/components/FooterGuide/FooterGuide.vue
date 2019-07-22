@@ -12,7 +12,7 @@
       </div>
       <span>分类</span>
     </li>
-    <li :class="{active: $route.path === '/thing'}" @click="$router.replace('/thing')">
+    <li :class="{active: $route.path === '/thing' || $route.path === '/things/find' || $route.path === '/things/choose'}" @click="$router.replace('/thing')">
       <div class="footer-icon">
         <img src="http://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/sprites/tabBar-s43a0dc8a7d-de25ef8e19.png" alt="icon">
       </div>
@@ -40,18 +40,19 @@
 <style lang="stylus" rel="stylesheet/stylus" scoped>
   @import "../../common/stylus/mixins.styl"
   ul
-    border-top: 1px solid rgba(0,0,0,.15);
-    background-color: #414141;
     position fixed
     bottom 0
     left 0
-    display flex
-    justify-content space-around
     height 100px
     width 100%
+    border-top: 1px solid rgba(0,0,0,.15);
+    background-color: #414141;
+    display flex
+    justify-content space-around
     font-size 24px
     background-color #fff
     margin-top -100px
+    z-index 500
     li
       display flex
       flex-direction column

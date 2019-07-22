@@ -18,6 +18,5 @@ import FooterGuider from './components/FooterGuide/FooterGuide'
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus" scoped>
-
 </style>
 
